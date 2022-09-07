@@ -60,7 +60,7 @@ let renderResults = (searchResults) => {
   searchResults.forEach(movie => {
     let elMovie = elSearchResultTemplate.cloneNode(true);
 
-    // $(".movie__poster", elMovie).src = movie.bigPoster;
+    $(".movie__poster", elMovie).src = movie.bigPoster;
     $(".movie__poster", elMovie).alt = movie.title;
     $(".movie__title", elMovie).textContent = movie.title;
     $(".movie__year", elMovie).textContent = movie.year;
@@ -144,7 +144,7 @@ let historyList = []
 
 
 elSearchForm.addEventListener('submit', function(evt){
-  // historyList.innerHTML = '';
+  historyList.innerHTML = '';
   
 
   let elinputVall = elSearchTitleInput.value;
