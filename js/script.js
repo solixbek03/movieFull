@@ -146,7 +146,7 @@ let historyList = []
 elSearchForm.addEventListener('submit', function(evt){
   evt.preventDefault()
 
-  // historyList.innerHTML = '';
+  historyList.innerHTML = '';
   
 
   let elinputVall = elSearchTitleInput.value;
